@@ -1,0 +1,5 @@
+They python script weather_api_test.py creates a csv of temperature records at a 
+Santa Barbara weather station. The specific parameters will be changed later in regards to 
+the location of our other data. This data will be added to our database and will have a
+table entry with psql. I am also working on creating tables for the other datasets in our 
+database. 
