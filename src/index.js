@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { PDFDownloadLink } from "@react-pdf/renderer";
 import HorizontalNav from './HorizontalNav';
+import MyDocument from './MyDocument';
 import './index.css';
 // class Square extends React.Component {
 //     render() {
@@ -77,11 +79,19 @@ import './index.css';
   // Text box for Analysis text
   class Analysis extends Component {
     render() {
+      const analysisText = 'analysis text goes here';
       return (
         <div class="card">
           <h5 class="card-header">Water Efficiency</h5>
           <div class="card-body">
             <p class="card-text">analysis text goes here!</p>
+            <PDFDownloadLink 
+              document={<MyDocument data={analysisText}/>}
+              fileName="efficiencyAnalysis.pdf"
+              className="btn btn-primary"
+            >
+              Download PDF
+            </PDFDownloadLink>
           </div>
         </div>
       );
