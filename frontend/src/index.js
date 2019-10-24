@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { PDFDownloadLink } from "@react-pdf/renderer";
-import HorizontalNav from './HorizontalNav';
-import MyDocument from './MyDocument';
+import HorizontalNav from './components/HorizontalNav';
+import MyDocument from './components/MyDocument';
+
+import Test from './index_db_test' // TUTORIAL USE ONLY
+
 import './index.css';
 // class Square extends React.Component {
 //     render() {
@@ -66,10 +69,10 @@ import './index.css';
   class MapArea extends Component {
     render() {
       return (
-        <div class="card">
-          <h5 class="card-header">placeholder</h5>
-          <div class="card-body">
-            <p class="card-text">This is only a placeholder for Google map</p>
+        <div className="card">
+          <h5 className="card-header">placeholder</h5>
+          <div className="card-body">
+            <p className="card-text">This is only a placeholder for Google map</p>
           </div>
         </div>
       );
@@ -81,10 +84,10 @@ import './index.css';
     render() {
       const analysisText = 'analysis text goes here';
       return (
-        <div class="card">
-          <h5 class="card-header">Water Efficiency</h5>
-          <div class="card-body">
-            <p class="card-text">analysis text goes here!</p>
+        <div className="card">
+          <h5 className="card-header">Water Efficiency</h5>
+          <div className="card-body">
+            <p className="card-text">analysis text goes here!</p>
             <PDFDownloadLink 
               document={<MyDocument data={analysisText}/>}
               fileName="efficiencyAnalysis.pdf"
@@ -101,12 +104,12 @@ import './index.css';
   class MainBody extends Component {
     render() {
       return (
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-lg-6">
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col-lg-6">
               <MapArea />
             </div>
-            <div class="col-lg-6">
+            <div className="col-lg-6">
               <Analysis />
             </div>
           </div>
@@ -115,12 +118,15 @@ import './index.css';
     }
   }
 
+
   class Home extends Component {
     render(){
       return (
         <>
           <HorizontalNav />
           <MainBody />
+          
+          <Test />
         </>
       );
     }
