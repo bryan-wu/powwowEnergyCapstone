@@ -1,18 +1,34 @@
 # powwowEnergyCapstone
 
-Meredith's updates for week 10/14-10/18:
+To run frontend:
 
-1. created a UI mock-up on basamiq
+```
+cd frontend
 
-2. learned react by following some tutorials and created a basic hello wolrd web template using node.js to set up local server
+npm start
+```
 
-* instructions to run the web template:
+To run backend, you need to install pipenv
 
-* git clone the repo
+```
+pip install pipenv
 
-* npm install
+pipenv shell
+```
 
-* npm start
+Do all of this from within the pipenv shell:
+```
+pip install django
 
-3. created a pull request against master for the template
+pip install djangorestframework 
 
+pip install django-cors-headers
+
+
+python manage.py runserver
+```
+
+Type ```quit``` to exit the shell
+
+
+[Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
