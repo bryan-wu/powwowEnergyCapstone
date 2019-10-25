@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LogIn from './componet/LogIn';
 
 // A utility class for Horizontal nav bar
 // Can be used across all pages
@@ -39,7 +40,9 @@ class HorizontalNav extends Component {
         </ul>
       </div>
       <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">login</button>
+		<a href="/Login">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
+		  </a>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">signup</button>
         </form>
     </nav>
@@ -48,3 +51,5 @@ class HorizontalNav extends Component {
   }
 
 export default HorizontalNav;
+
+		

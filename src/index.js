@@ -31,7 +31,7 @@ const AnyReactComponent = ({ marker }) => <div>{marker}</div>;
 		zoom: 8
 		
 	  };
-	 
+	 //AIzaSyCgi0P05okXVDaayvOKj80KJC2JU_p3A2k
 	  render() {
 		return (
 		  // Important! Always set the container height explicitly
