@@ -28,7 +28,7 @@ pip install django-cors-headers
 python manage.py runserver
 ```
 
-Type ```quit``` to exit the shell
+Type ```exit``` to exit the shell
 
 
 [Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
