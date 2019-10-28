@@ -39,7 +39,7 @@ To add a new model, start the pipenv shell and run the following:
 ```
 cd backend
 
-python manage.py startapp blogsite
+python manage.py startapp model_name_here
 ```
 
 
