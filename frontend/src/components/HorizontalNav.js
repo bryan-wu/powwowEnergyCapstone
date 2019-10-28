@@ -56,7 +56,7 @@ class HorizontalNav extends Component {
 				<Switch>
 				<Route path='/' component={App}>
 				 <Route path="/login" component={Login}/>
-				 <Route path="/singup" component={Signup}/>
+				 <Route path="/signup" component={Signup}/>
 				  </Route>
 			    </Switch>
 			</div> 
