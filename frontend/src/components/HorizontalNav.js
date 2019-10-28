@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
-import LogIn from './componet/LogIn';
+import {
+  BrowserRouter,// as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Login from './Login';
+import Signup from './Signup'; 
+import Navigation from './Navigation';
+import App from './app';
 
 // A utility class for Horizontal nav bar
 // Can be used across all pages
@@ -40,16 +50,23 @@ class HorizontalNav extends Component {
         </ul>
       </div>
       <form class="form-inline my-2 my-lg-0">
-		<a href="/Login">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
-		  </a>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">signup</button>
+         <BrowserRouter>
+			<div>
+			<Navigation />
+				<Switch>
+				<Route path='/' component={App}>
+				 <Route path="/login" component={Login}/>
+				 <Route path="/singup" component={Signup}/>
+				  </Route>
+			    </Switch>
+			</div> 
+	     </BrowserRouter>
         </form>
     </nav>
       );
+
     }
   }
 
-export default HorizontalNav;
 
-		
+export default HorizontalNav;
