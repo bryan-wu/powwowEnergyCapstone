@@ -5,10 +5,14 @@ To run frontend:
 ```
 cd frontend
 
+npm install
+
 npm start
 ```
 
 To run backend, you need to install pipenv
+
+These instructions assume that default python is python3. If the default is python2, then you need to run using pip3 and python3.
 
 ```
 pip install pipenv
@@ -24,11 +28,11 @@ pip install djangorestframework
 
 pip install django-cors-headers
 
+cd backend
 
 python manage.py runserver
 ```
 
 Type ```exit``` to exit the shell
-
 
 [Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
