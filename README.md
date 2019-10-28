@@ -1,18 +1,18 @@
 # powwowEnergyCapstone
 
-Meredith's updates for week 10/14-10/18:
+Bryan's updates for the week of Monday, Oct. 14 - Sunday, Oct. 18:
+1. Researched Docker containers (ended up not Docker using after receiving mentor feedback)
 
-1. created a UI mock-up on basamiq
+2. Explored QGIS data sets provided by PowWow
 
-2. learned react by following some tutorials and created a basic hello wolrd web template using node.js to set up local server
 
-* instructions to run the web template:
+Bryan's updates for the week of Monday, Oct. 21 - Sunday, Oct. 25:
 
-* git clone the repo
+1. Create rough draft of high-level architecture diagram and updated according to mentor feedback
+Please see page four of this Google Doc to view the diagram:
+https://docs.google.com/document/d/1d9Yp-a7nTVjvd7aOZvnEuXOriHPLyRiXnMUZBN43ByE/edit
 
-* npm install
 
-* npm start
+2. Connected Heroku to project Github repo for automatic deployments
 
-3. created a pull request against master for the template
-
+3. Researched Django and PostgreSQL database design
