@@ -35,4 +35,12 @@ python manage.py runserver
 
 Type ```exit``` to exit the shell
 
+To add a new model, start the pipenv shell and run the following:
+```
+cd backend
+
+python manage.py startapp blogsite
+```
+
+
 [Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
