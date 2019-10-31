@@ -8,7 +8,7 @@ class SimpleMap extends Component {
     static defaultProps = {
         center: {
             lat: 34.42,
-            lng: 119.69
+            lng: -119.70
         },
         zoom: 8
 
@@ -19,14 +19,14 @@ class SimpleMap extends Component {
             // Important! Always set the container height explicitly
             <div style={{ height: '500px', width: '100%' }}>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: 'AIzaSyCgi0P05okXVDaayvOKj80KJC2JU_p3A2k' }}
+                    bootstrapURLKeys={{ key: '000' }}
                     defaultCenter={this.props.center}
                     defaultZoom={this.props.zoom}
                 >
                     <AnyReactComponent
-                        lat={34.4208}
-                        lng={119.6982}
-                        marker="My Marker"
+                        //lat={34.4208}
+                        //lng={119.6982}
+                        //marker="My Marker"
                     />
                 </GoogleMapReact>
             </div>

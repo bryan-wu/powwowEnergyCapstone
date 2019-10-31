@@ -1,5 +1,5 @@
 import React from 'react';
-import HorizontalNav from './HorizontalNav';
+
  
 const Login = () => {
     return (
