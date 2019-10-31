@@ -13,4 +13,7 @@ Checkout database db1:
 Read a psql cheatsheet
 
 To restart:
-sudo service postgresql restart
+sudo service postgresql restart]
+
+In pipenv shell:
+pip install python-dotenv
