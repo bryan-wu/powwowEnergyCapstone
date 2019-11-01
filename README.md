@@ -41,6 +41,11 @@ cd backend
 
 python manage.py startapp model_name_here
 ```
-
+frontend packages: 
+```
+npm install react-bootstrap --save-dev
+npm install --save react-router-dom
+npm install --save google-map-react
+```
 
 [Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
