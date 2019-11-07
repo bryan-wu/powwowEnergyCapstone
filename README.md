@@ -1,18 +1,34 @@
 # powwowEnergyCapstone
 
-Bryan's updates for the week of Monday, Oct. 14 - Sunday, Oct. 18:
-1. Researched Docker containers (ended up not Docker using after receiving mentor feedback)
+pipenv shell
+```
 
-2. Explored QGIS data sets provided by PowWow
+Do all of this from within the pipenv shell:
+```
+pip install django
 
+pip install djangorestframework 
 
-Bryan's updates for the week of Monday, Oct. 21 - Sunday, Oct. 25:
+pip install django-cors-headers
 
-1. Created rough draft of high-level architecture diagram and updated according to mentor feedback.
-Please see page four of this Google Doc to view the diagram:
-https://docs.google.com/document/d/1d9Yp-a7nTVjvd7aOZvnEuXOriHPLyRiXnMUZBN43ByE/edit
+cd backend
 
+python manage.py runserver
+```
 
-2. Connected Heroku to project Github repo for automatic deployments
+Type ```exit``` to exit the shell
 
-3. Researched Django and PostgreSQL database design
+To add a new model, start the pipenv shell and run the following:
+```
+cd backend
+
+python manage.py startapp model_name_here
+```
+frontend packages: 
+```
+npm install react-bootstrap --save-dev
+npm install --save react-router-dom
+npm install --save google-map-react
+```
+
+[Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
