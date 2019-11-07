@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Polygon from 'google-map-react';
 import coordinates from './Coordinates1'
+import Marker from './Marker'
 const AnyReactComponent = ({ marker }) => <div>{marker}</div>;
 
 class SimpleMap extends Component {
@@ -23,12 +24,17 @@ class SimpleMap extends Component {
             <div>
                 <div style={{ height: '500px', width: '100%' }}>
                     <GoogleMapReact
-                        bootstrapURLKeys={{ key: '0001' }}
+                        bootstrapURLKeys={{ key: '000' }}
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                     >
-                        
-                           	<Polygon
+                        <Marker
+						 	lat={34.4208}
+                            lng={-119.6982}
+                            marker="My Marker"
+							color = "blue"
+						/>
+						{/*}	<Polygon
 								path={coordinates}
 								key={1}
 								options={{
@@ -39,7 +45,7 @@ class SimpleMap extends Component {
 									strokeWeight: 1
 								}}
 
-							/>
+						/>*/}
 		
                     </GoogleMapReact>
                 </div>
