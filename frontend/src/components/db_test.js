@@ -9,7 +9,7 @@ class Test extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            todoList: []
+            weatherdataList: []
         };
     }
     componentDidMount() {
@@ -17,14 +17,14 @@ class Test extends Component {
     }
     refreshList = () => {
         axios
-            .get("http://localhost:5000/weather/")
-            .then(res => this.setState({ todoList: res.data }))
+            .get("http://localhost:5000/weather")
+            .then(res => this.setState({ weatherdataList: res.data }))
             .catch(err => console.log(err));
     };
 
     renderItems = () => {
 
-        return this.state.todoList.map(item => (
+        return this.state.weatherdataList.map(item => (
             <li
                 key={item.id}
                 className="list-group-item d-flex justify-content-between align-items-center"
