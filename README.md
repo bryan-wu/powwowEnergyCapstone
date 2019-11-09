@@ -21,7 +21,7 @@ $ python3 manage.py runserver
 
 Type ```deactivate``` to exit the shell
 
-Note: These exports must be executed each time the virtualenv shell is activated.
+NOTE: In order to run the server, these exports must be executed each time the virtualenv shell is activated.
 ```
 $ export APP_SETTINGS="config.DevelopmentConfig"
 $ export DATABASE_URL="postgresql://localhost/db1"
