@@ -11,7 +11,7 @@ Do all of this from within the virtualenv shell:
 $ pip3 install Flask
 $ pip3 install flask_sqlalchemy
 $ pip3 install flask_script
-$ pip install flask-cors
+$ pip3 install flask-cors
 $ pip3 install flask_migrate
 $ pip3 install psycopg2-binary
 $ export APP_SETTINGS="config.DevelopmentConfig"
@@ -21,7 +21,11 @@ $ python3 manage.py runserver
 
 Type ```deactivate``` to exit the shell
 
-
+Note: These exports must be executed each time the virtualenv shell is activated.
+```
+$ export APP_SETTINGS="config.DevelopmentConfig"
+$ export DATABASE_URL="postgresql://localhost/db1"
+```
 
 frontend packages: 
 ```
