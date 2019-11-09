@@ -4,11 +4,10 @@
 ```
 $ cd prod_server
 $ pip3 install virtualenv
+$ source venv/bin/activate
 ```
-
 Do all of this from within the virtualenv shell:
 ```
-$ source venv/bin/activate
 $ pip3 install Flask
 $ pip3 install flask_sqlalchemy
 $ pip3 install flask_script
