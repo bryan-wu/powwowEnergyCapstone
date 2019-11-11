@@ -1,7 +1,9 @@
 
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-
+import Polygon from 'google-map-react';
+import coordinates from './Coordinates1'
+import Marker from './Marker'
 const AnyReactComponent = ({ marker }) => <div>{marker}</div>;
 
 class SimpleMap extends Component {
@@ -15,21 +17,36 @@ class SimpleMap extends Component {
     };
 
     render() {
+
         return (
             // Important! Always set the container height explicitly
              // only one root is allowed so the wrapper div is required even if it's not doing anything
             <div>
                 <div style={{ height: '500px', width: '100%' }}>
                     <GoogleMapReact
-                        bootstrapURLKeys={{ key: 'AIzaSyCgi0P05okXVDaayvOKj80KJC2JU_p3A2k' }}
+                        bootstrapURLKeys={{ key: '000' }}
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                     >
-                        <AnyReactComponent
-                            lat={34.4208}
-                            lng={119.6982}
+                        <Marker
+						 	lat={34.4208}
+                            lng={-119.6982}
                             marker="My Marker"
-                        />
+							color = "blue"
+						/>
+						{/*}	<Polygon
+								path={coordinates}
+								key={1}
+								options={{
+									fillColor: "#000",
+									fillOpacity: 0.4,
+									strokeColor: "#000",
+									strokeOpacity: 1,
+									strokeWeight: 1
+								}}
+
+						/>*/}
+		
                     </GoogleMapReact>
                 </div>
                 <div className="btn-group dropright mt-2 mr-2">
@@ -53,6 +70,8 @@ class SimpleMap extends Component {
                     </div>
                 </div>
             </div>
+			
+			
         );
     }
 }

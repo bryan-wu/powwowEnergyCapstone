@@ -1,46 +1,32 @@
 # powwowEnergyCapstone
 
-To run frontend:
 
 ```
-cd frontend
-
-npm install
-
-npm start
+$ cd prod_server
+$ pip3 install virtualenv
+$ source venv/bin/activate
+```
+Do all of this from within the virtualenv shell:
+```
+$ pip3 install Flask
+$ pip3 install flask_sqlalchemy
+$ pip3 install flask_script
+$ pip3 install flask-cors
+$ pip3 install flask_migrate
+$ pip3 install psycopg2-binary
+$ export APP_SETTINGS="config.DevelopmentConfig"
+$ export DATABASE_URL="postgresql://localhost/db1"
+$ python3 manage.py runserver
 ```
 
-To run backend, you need to install pipenv
+Type ```deactivate``` to exit the shell
 
-These instructions assume that default python is python3. If the default is python2, then you need to run using pip3 and python3.
-
+NOTE: In order to run the server, these exports must be executed each time the virtualenv shell is activated.
 ```
-pip install pipenv
-
-pipenv shell
+$ export APP_SETTINGS="config.DevelopmentConfig"
+$ export DATABASE_URL="postgresql://localhost/db1"
 ```
 
-Do all of this from within the pipenv shell:
-```
-pip install django
-
-pip install djangorestframework 
-
-pip install django-cors-headers
-
-cd backend
-
-python manage.py runserver
-```
-
-Type ```exit``` to exit the shell
-
-To add a new model, start the pipenv shell and run the following:
-```
-cd backend
-
-python manage.py startapp model_name_here
-```
 frontend packages: 
 ```
 npm install react-bootstrap --save-dev

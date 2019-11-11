@@ -6,3 +6,8 @@ package-lock.json
 plots/
 data/
 *~
+prod_server/venv/
+prod_server/__pycache__/
+prod_server/migrations/__pycache__/
+prod_server/migrations/versions/__pycache__
+
