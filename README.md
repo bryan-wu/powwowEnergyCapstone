@@ -15,7 +15,7 @@ $ pip3 install flask-cors
 $ pip3 install flask_migrate
 $ pip3 install psycopg2-binary
 $ export APP_SETTINGS=config.DevelopmentConfig
-$ export DATABASE_URL=postgresql://localhost/db1
+$ export DATABASE_URL=postgresql://localhost/db1  // DONT DO THIS STEP IF YOU WANT TO CONNECT TO THE REAL DB. Change the URL
 $ python3 manage.py runserver
 ```
 
