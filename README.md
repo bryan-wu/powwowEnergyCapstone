@@ -32,13 +32,11 @@ frontend packages:
 ```
 cd frontend
 npm install 
-
 ```
 
 To Start the Frontend:
 Make sure you're in the frontend directory
 ```
 npm start
-
 ```
 [Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
