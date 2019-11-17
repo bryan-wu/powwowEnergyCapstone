@@ -14,6 +14,7 @@ $ pip3 install flask_script
 $ pip3 install flask-cors
 $ pip3 install flask_migrate
 $ pip3 install psycopg2-binary
+$ pip3 install python-dotenv
 $ export APP_SETTINGS=config.DevelopmentConfig
 $ export DATABASE_URL=postgresql://localhost/db1  // DONT DO THIS STEP IF YOU WANT TO CONNECT TO THE REAL DB. Change the URL
 $ python3 manage.py runserver
@@ -29,9 +30,15 @@ $ export DATABASE_URL="postgresql://localhost/db1"
 
 frontend packages: 
 ```
-npm install react-bootstrap --save-dev
-npm install --save react-router-dom
-npm install --save google-map-react
+cd frontend
+npm install 
+
 ```
 
+To Start the Frontend:
+Make sure you're in the frontend directory
+```
+npm start
+
+```
 [Link to tutorial](https://scotch.io/tutorials/build-a-to-do-application-using-django-and-react)
