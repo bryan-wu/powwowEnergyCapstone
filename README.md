@@ -17,7 +17,8 @@ $ pip3 install psycopg2-binary
 $ pip3 install python-dotenv
 $ export APP_SETTINGS=config.DevelopmentConfig
 $ export DATABASE_URL=postgresql://localhost/db1  // DONT DO THIS STEP IF YOU WANT TO CONNECT TO THE REAL DB. Change the URL
-$ python3 manage.py runserver
+$ cd ../
+$ python3 prod_server/manage.py runserver
 ```
 
 Type ```deactivate``` to exit the shell
