@@ -1,6 +1,18 @@
 # powwowEnergyCapstone
 
 
+NEW Instructions:
+
+1. Install Docker. (For Windows, install docker toolbox)
+
+2. Get the .env file and put it in the root
+
+```
+$ docker-compose up --build
+```
+
+
+OLD INSTRUCTIONS: 
 ```
 $ cd prod_server
 $ pip3 install virtualenv
