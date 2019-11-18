@@ -4,6 +4,7 @@
 ```
 $ cd prod_server
 $ pip3 install virtualenv
+$ virtualenv venv
 $ source venv/bin/activate
 ```
 Do all of this from within the virtualenv shell:
