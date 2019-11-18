@@ -11,6 +11,18 @@ NEW Instructions:
 $ docker-compose up --build
 ```
 
+To see on Windows:
+```
+192.168.99.100:5000 for backend
+192.168.99.100:3000 for frontend
+```
+
+To see on Mac:
+```
+localhost:5000 for backend
+localhost:3000 for frontend
+```
+
 
 OLD INSTRUCTIONS: 
 ```
