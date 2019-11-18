@@ -1,0 +1,27 @@
+version: '3.5'
+services:
+  prod_server:
+    build: ./prod_server
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    volumes:
+      - ./prod_server:/usr/src/app
+    environment:
+      FLAS_ENV=development
+      FLASK_APP=app.py
+      FLASK_DEBUG=1
+
+  frontend:
+    build: ./frontend
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend/src:/usr/src/app/src
+      - ./frontend/public:/usr/src/app/public
+    links:
+      - "prod_server:prod_server"
+    
