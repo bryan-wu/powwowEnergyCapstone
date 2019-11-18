@@ -1,22 +1,20 @@
 version: '3.7'
 services:
-  prod_server:
-    build: ./prod_server
-    expose:
-      - 5000
-    ports:
-      - 5000:5000
-    volumes:
-      - ./prod_server:/usr/src/app
-    env_file:
-      - .env
-    environment:
-      - APP_SETTINGS=config.DevelopmentConfig
+  # prod_server:
+  #   build: ./prod_server
+  #   expose:
+  #     - 5000
+  #   ports:
+  #     - 5000:5000
+  #   volumes:
+  #     - ./prod_server:/usr/src/app
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - APP_SETTINGS=config.DevelopmentConfig
 
   frontend:
-    build: 
-      context: ./frontend
-      dockerfile: Dockerfile
+    build: ./frontend
     expose:
       - 3000
     ports:
@@ -24,9 +22,11 @@ services:
     env_file:
       - .env
     volumes:
-      - ./frontend:/app
-      - ./frontend:/app/node_modules
+      - ./frontend/src:/usr/src/app/src
+      - ./frontend/public:/usr/src/app/public
+    environment:
+      - HOST=localhost
      
-    links:
-      - "prod_server:prod_server"
+    # links:
+    #   - "prod_server:prod_server"
     
