@@ -11,9 +11,7 @@ services:
     env_file:
       - .env
     environment:
-      - FLASK_ENV=development
-      - FLASK_APP=manage.py
-      - FLASK_DEBUG=1
+      - APP_SETTINGS=config.DevelopmentConfig
 
   frontend:
     build: 
@@ -28,8 +26,7 @@ services:
     volumes:
       - ./frontend:/app
       - ./frontend:/app/node_modules
-      # - ./frontend/src:/usr/src/app/src
-      # - ./frontend/public:/usr/src/app/public
+     
     links:
       - "prod_server:prod_server"
     

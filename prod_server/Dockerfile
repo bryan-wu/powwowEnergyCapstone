@@ -10,6 +10,8 @@ COPY requirements.txt /usr/src/app/requirements.txt
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+
+ADD . /usr/src/app
 # ENTRYPOINT [ "flask" ]
 # CMD ["run", "--host=localhost"]
 CMD ["python", "manage.py", "runserver"]
