@@ -24,7 +24,7 @@ class Test extends Component {
 
     renderItems = () => {
 
-        return this.state.weatherdataList.map(item => (
+        return Array.from(this.state.weatherdataList).map(item => (
             <li
                 key={item.id}
                 className="list-group-item d-flex justify-content-between align-items-center"
